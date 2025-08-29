@@ -34,6 +34,7 @@ int main()
 
     //declare variable
     // collect data
+    // print the result
 
     return 0;
 }
