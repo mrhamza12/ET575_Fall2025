@@ -19,6 +19,8 @@ int main()
     cout<<"Enter a new username"<<endl;
     cin >> username;
     cout<<"New user has is "<<username<<endl;
+
+    cout <<"----- Example 3: deta type -----"<<endl;
     // declear variable
     char sym = '%' ;
     float distance = 5.63;
@@ -31,7 +33,7 @@ int main()
     cout<< "-------Exercise----"<<end;
 
     //declare variable
-    //
+    // collect data
 
     return 0;
 }
