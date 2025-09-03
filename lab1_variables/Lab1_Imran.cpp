@@ -19,6 +19,8 @@ int main()
     cout<<"Enter a new username"<<endl;
     cin >> username;
     cout<<"New user has is "<<username<<endl;
+
+    cout <<"----- Example 3: deta type -----"<<endl;
     // declear variable
     char sym = '%' ;
     float distance = 5.63;
@@ -31,7 +33,40 @@ int main()
     cout<< "-------Exercise----"<<end;
 
     //declare variable
-    //
+    // collect data
+    // print the result
+
+    return 0;
+}
+
+
+//Homework
+
+//declare variable
+    string country;
+    char gender;
+    int zipcode;
+    double rate;
+
+    // Collect data - using cin >>
+    cout << "Please enter a country: ";
+    cin >> country;
+    
+    cout << "Please enter gender (f for female, m for male, o for others): ";
+    cin >> gender;
+    
+    cout << "Please enter a zip code: ";
+    cin >> zipcode;
+    
+    cout << "Please enter a tax rate (with decimal places): ";
+    cin >> rate;
+    
+   // print the result
+    cout << "\n------Results------" << endl;
+    cout << "Entered country:\t" << country << endl;
+    cout << "Selected gender:\t" << gender << endl;
+    cout << "Zip code:\t\t" << zipcode << endl;
+    cout << "Tax rate:\t\t" << rate << endl;
 
     return 0;
 }
