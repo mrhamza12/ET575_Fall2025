@@ -78,3 +78,44 @@ int main (){
         cout<<"implicit casting = "<<m/2<<endl;
     return 0;
 }
+
+//Homework
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Arithmetic Operations
+    int a, b;
+    
+    cout << "Enter the first number (a): ";
+    cin >> a;
+    cout << "Enter the second number (b): ";
+    cin >> b;
+    
+    cout << "\nArithmetic Operations:" << endl;
+    cout << "a + b = " << a + b << endl;
+    cout << "a - b = " << a - b << endl;
+    cout << "a * b = " << a * b << endl;
+    cout << "a / b = " << a / b << endl;
+    cout << "a % b = " << a % b << endl;
+    
+    // Assignment Operations
+    a += 10;
+    b -= 5;
+    
+    cout << "\nAfter assignment operations:" << endl;
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+    
+    // Boolean (logical) Operations
+    cout << "\nBoolean Operations:" << endl;
+    cout << "Is a greater than b? " << boolalpha << (a > b) << endl;
+    cout << "Is a equal to b? " << boolalpha << (a == b) << endl;
+    cout << "Is a not equal to b? " << boolalpha << (a != b) << endl;
+    cout << "Are both a and b positive? " << boolalpha << (a > 0 && b > 0) << endl;
+    cout << "Is either a or b negative? " << boolalpha << (a < 0 || b < 0) << endl;
+    cout << "Is a not greater than b? " << boolalpha << (!(a > b)) << endl;
+    
+    return 0;
+}
