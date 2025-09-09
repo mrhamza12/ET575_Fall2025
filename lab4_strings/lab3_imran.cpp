@@ -58,3 +58,26 @@ int main(){
     return 0;
 }
 
+#Homework
+
+int main(){
+    string word;
+    
+    cout << "Please type a word: ";
+    cin >> word;
+    
+    cout << "2nd character: \t\t" << word[1] << endl;
+    
+    int characters = word.length();
+    cout << "word has: \t\t" << characters << " characters" << endl;
+    
+    string replace_word = word;
+    replace_word.replace(2, 2, "-- $ --");
+    cout << "Replace word: \t\t" << replace_word << endl;
+    
+    string remove_word = word;
+    remove_word.erase(remove_word.length() - 3, 3);
+    cout << "Remove end characters: \t" << remove_word << endl;
+
+    return 0;
+}
