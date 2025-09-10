@@ -54,12 +54,36 @@ int main(){
     int index_prof = msg.find("Prof");
     cout<<"The index of Prof = "<<index_prof<<endl;
 
-    cout <<"\n ---- EXERCISE  ---- "<<endl;
-
 
     return 0;
 }
 
+<<<<<<< HEAD:lab3_strings/lab3_imran.cpp
 
 
 
+=======
+#Homework
+
+int main(){
+    string word;
+    
+    cout << "Please type a word: ";
+    cin >> word;
+    
+    cout << "2nd character: \t\t" << word[1] << endl;
+    
+    int characters = word.length();
+    cout << "word has: \t\t" << characters << " characters" << endl;
+    
+    string replace_word = word;
+    replace_word.replace(2, 2, "-- $ --");
+    cout << "Replace word: \t\t" << replace_word << endl;
+    
+    string remove_end = word;
+    remove_end.erase(remove_end.length() - 3, 3);
+    cout << "Remove end characters: \t" << remove_end << endl;
+
+    return 0;
+}
+>>>>>>> 88fc4f3566285423705d30ceb80610c75770ef81:lab4_strings/lab3_imran.cpp
