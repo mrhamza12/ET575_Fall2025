@@ -75,7 +75,7 @@ int main(){
     replace_word.replace(2, 2, "-- $ --");
     cout << "Replace word: \t\t" << replace_word << endl;
     
-    string remove_word = word;
+    string remove_end = word;
     remove_end.erase(remove_end.length() - 3, 3);
     cout << "Remove end characters: \t" << remove_end << endl;
 
