@@ -76,8 +76,8 @@ int main(){
     cout << "Replace word: \t\t" << replace_word << endl;
     
     string remove_word = word;
-    remove_word.erase(remove_word.length() - 3, 3);
-    cout << "Remove end characters: \t" << remove_word << endl;
+    remove_end.erase(remove_end.length() - 3, 3);
+    cout << "Remove end characters: \t" << remove_end << endl;
 
     return 0;
 }
