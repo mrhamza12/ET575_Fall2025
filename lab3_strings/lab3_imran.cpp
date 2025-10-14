@@ -1,5 +1,5 @@
 /*
-student's full name
+Hamza Imran
 Lab 3,string and string method
 Sep 8, 2025
 */
