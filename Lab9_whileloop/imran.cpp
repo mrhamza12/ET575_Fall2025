@@ -123,5 +123,31 @@ int main(){
     }
     cout<<"The total sum of numbers = "<<sum_all<<endl;
 
+    
+cout<<"\n--- Lab Exercise: Sum of digits until user enters 0 ----\n"<<endl;
+
+    int input = 0;
+    do{
+        cout<<"Enter an integer (0 to stop): ";
+        cin>>input;
+
+        if(input == 0){
+            break; // stop program
+        }
+
+        // calculate sum of digits
+        int temp = input;
+        int digit_sum = 0;
+        while(temp != 0){
+            digit_sum += temp % 10;
+            temp /= 10;
+        }
+
+        cout<<"The sum of digits of "<<input<<" is = "<<digit_sum<<endl;
+
+    } while(input != 0);
+
+    cout<<"The total sum is 0 (program stopped by user)."<<endl;
+
     return 0;
 }
