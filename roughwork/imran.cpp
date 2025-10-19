@@ -1,39 +1,33 @@
+#include<iostream>
+using namespace std;
 
-    
-    // Exercise 1
-    cout << "=== EXERCISE 1 ===" << endl;
-    cout << "Decrementing from 21 to -21 by 5, counting multiples of 2" << endl;
-    
-    int countMultiples = 0;
-    
-    for (int i = 21; i >= -21; i -= 5) {
-        cout << "Counter = " << i;
-        
-        // Check if current value is multiple of 2
-        if (i % 2 == 0) {
-            cout << " (multiple of 2)";
-            countMultiples++;
+int main() {
+    // Part a)
+    cout << "Part a) Output:" << endl;
+    int sum=0, count=0;
+    for (int n = 20; n> 0; n-=2){
+        if (n%3 ==0){
+            count++;
+            continue;
         }
-        cout << endl;
+        sum += n;
     }
-    
-    cout << "Total multiples of 2: " << countMultiples << endl;
-    cout << endl;
-    
-    // Exercise 2
-    cout << "=== EXERCISE 2 ===" << endl;
-    
-    int startValue;
-    
-    // Get user input for start value
-    cout << "Enter the starting value: ";
-    cin >> startValue;
-    
-    cout << "Counting from " << startValue << " to 30 with increment of 4:" << endl;
-    
-    for (int i = startValue; i <= 30; i += 4) {
-        cout << "Counter = " << i << endl;
+    cout<<"The sum is: "<<sum<<endl<<"The count is: "<<count<<endl;
+
+    cout << "\n----------------------------\n" << endl;
+
+    // Part b)
+    cout << "Part b) Output:" << endl;
+    int i=0, add=0;
+    while(i<=10){
+        i++;
+        if(i<5 && i !=2){   
+            cout<<"i = "<<i<<endl;
+            }
+        else{continue;}
+        add +=i;
     }
-    
+    cout<<"Add = "<<add<<endl;
+
     return 0;
 }
