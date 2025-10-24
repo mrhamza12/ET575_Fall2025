@@ -44,17 +44,40 @@ int main(){
     double f = fah(12.5);
     printfah(f);    
 
-cout<<"\n----- Example8 : check a number -----"<<endl;
+    cout<<"\n----- Example8 : check a number -----"<<endl;
 
-string checknum = checknumber(-1);
-printnumber(checknum);
+    string checknum = checknumber(-1);
+    printnumber(checknum);
 
-cout<<"\n----- EXERCISE -----"<<endl;
-
-
-
-
+    cout << "\n----- LAB EXERCISE: Even Number Check -----" << endl;
+    
+    // Test the even number functions
+    int testNumber;
+    cout << "Enter a number to check if it's even: ";
+    cin >> testNumber;
+    
+    bool evenCheck = isEven(testNumber);
+    printEvenResult(testNumber, evenCheck);
+    
+    // Test with multiple numbers
+    cout << "\nTesting with multiple numbers:" << endl;
+    printEvenResult(4, isEven(4));
+    printEvenResult(7, isEven(7));
+    printEvenResult(0, isEven(0));
+    printEvenResult(-2, isEven(-2));
 
     return 0;
+}
+
+bool isEven(int number) {
+    return number % 2 == 0;
+}
+
+void printEventResult(int number, bool result) {
+    cout << number << " is " << (result ? "even" : "odd") << endl;
+}
+
+
+return 0;
 
 }
