@@ -1,4 +1,4 @@
-// Mamoor Ahmad
+// Hamza Imran
 // Sep 15,2025
 // lab11, introduction to function
 #include<iostream>
