@@ -1,83 +1,56 @@
-/*
-Hamza Imran
-lab11, introduction to functions
-*/
-
-#include <iostream>
+// Hamza Imran
+// Sep 15,2025
+// lab11, introduction to function
+#include<iostream>
 using namespace std;
-#include "imran_function.cpp"
+#include"imran_function.cpp"
 
 int main(){
-
-    cout<<"\n----- Example1 :void function -----"<<endl;
+    cout<<"\n ---- Example 1: void function ----"<<endl;
+    printhello();
+    printhello();
     printhello();
 
-    cout<<"\n----- Example2 :void function with parameters -----"<<endl;
+    cout<<"\n ---- Example 2: void function with arguments ----"<<endl;
     string username = "Anna";
-    greating("peter");
-    greating("username");
-    greating("carl");
+    greating("Peter");
+    greating(username);
+    greating("Carl");
 
-    cout<<"\n----- Example3 :function with value-----"<<endl;
+    cout<<"\n ---- Example 3: function with returning value ----"<<endl;
     int savefive = returnfive();
+    cout<< "The returning value is    \t "<<savefive<<endl;
     savefive += 2;
-    cout<<"The returning value after += 2 = \t"<< savefive << endl;
+    cout<<"The returning value after += 2  \t"<<savefive<<endl;
 
-    cout<<"\n----- Example4 :code after return -----"<<endl;
+    cout<<"\n ---- Example 4: code after the return ----"<<endl;
+    printsome();
+    int n = returnfive();
+    cout<<"Some number \t "<<n<<endl;
 
-    printsome();    
-    int n = somenumber();
-    cout<<"some number \t"<< n << endl;
+    cout<<"\n ---- Example 5: calculate the area of square ----"<<endl;
+    float area_square = areasquare(2.5);
+    cout<<"The area of a square is   \t"<<area_square<<endl;
 
-    cout<<"\n----- Example5 :function that calculates and returns the area of a square -----"<<endl;
+    cout<<"\n ---- Example 6: Product of two numbers ----"<<endl;
+    int p = product(2,3);
+    cout<<"The product is   \t"<<p<<endl;
 
-    float area_square1 = areasquare(2.5);
-    cout<<"Area of a square is : \t"<< area_square1 << endl;
-
-    cout<<"\n----- Example6 :product of two numbers -----"<<endl;
-
-    int p = product(2, 3);
-    cout<<"The product is : \t"<< p << endl;
-
-    cout<<"\n----- Example7 :calculates the fahrenheit temperature -----"<<endl;
-
+    cout<<"\n ---- Example 7: Calculate the fahrenheit temperature ----"<<endl;
+    cout<<"Temperature ----- "<<endl;
     double f = fah(12.5);
-    printfah(f);    
+    printfah(f);
 
-    cout<<"\n----- Example8 : check a number -----"<<endl;
-
-    string checknum = checknumber(-1);
+    cout<<"\n ---- Example 8: Check a number ----"<<endl;
+    string checknum = checknumber(3);
     printnumber(checknum);
 
-    cout << "\n----- LAB EXERCISE: Even Number Check -----" << endl;
-    
-    // Test the even number functions
-    int testNumber;
-    cout << "Enter a number to check if it's even: ";
-    cin >> testNumber;
-    
-    bool evenCheck = isEven(testNumber);
-    printEvenResult(testNumber, evenCheck);
-    
-    // Test with multiple numbers
-    cout << "\nTesting with multiple numbers:" << endl;
-    printEvenResult(4, isEven(4));
-    printEvenResult(7, isEven(7));
-    printEvenResult(0, isEven(0));
-    printEvenResult(-2, isEven(-2));
+ cout<<"\n ---- Exercise: Check even number ----"<<endl;
+    int num;
+    cout<<"Enter a number: ";
+    cin>>num;
+    bool result = isEven(num);
+    printEvenResult(num, result);
 
     return 0;
-}
-
-bool isEven(int number) {
-    return number % 2 == 0;
-}
-
-void printEventResult(int number, bool result) {
-    cout << number << " is " << (result ? "even" : "odd") << endl;
-}
-
-
-return 0;
-
 }
