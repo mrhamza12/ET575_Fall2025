@@ -89,4 +89,3 @@ bool isEven(int number){
 void printEvenResult(int number, bool result){
     cout<<"Is "<<number<<" even? "<<result<<endl;
 }
-

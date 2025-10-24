@@ -1,4 +1,4 @@
-// Hamza Imran
+// Mamoor Ahmad
 // Sep 15,2025
 // lab11, introduction to function
 #include<iostream>
@@ -13,9 +13,9 @@ int main(){
 
     cout<<"\n ---- Example 2: void function with arguments ----"<<endl;
     string username = "Anna";
-    greating("Peter");
-    greating(username);
-    greating("Carl");
+    greeting("Peter");
+    greeting(username);
+    greeting("Carl");
 
     cout<<"\n ---- Example 3: function with returning value ----"<<endl;
     int savefive = returnfive();
