@@ -35,14 +35,13 @@ int main(){
      printhyp(s1, s2, h);
 
      cout<<"------ Exercise -------"<<endl;
-     int x1 = // call 1st function
-     int y1 = // call 1st function
-     int x2 = // call 1st function
-     int y2 = // call 1st function
+    int x1 = getPositiveNumber();
+    int y1 = getPositiveNumber();
+    int x2 = getPositiveNumber();
+    int y2 = getPositiveNumber();
 
-     float d = // call 2nd function
-
-     // call 3nd function
+    float d = calcDistance(x1, y1, x2, y2);
+    printDistance(x1, y1, x2, y2, d);
 
 
 

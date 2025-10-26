@@ -26,6 +26,26 @@ void printhyp(float s1, float s2,float h){
     cout<<"The hypothenus of side"<<s1<<" and "<<s2<<" is "<<h<<endl;
 }
 
-// Exercise
-// function to calculate the distance of four point
-// function to print the result
+// ----- Lab Exercise -----
+// collect and return a number greater than zero
+int getPositiveNumber(){
+    int value;
+    do {
+        cout<<"Enter a number greater than zero: ";
+        cin >> value;
+        if (value <= 0){
+            cout<<"Invalid input. Please try again."<<endl;
+        }
+    } while (value <= 0);
+    return value;
+}
+
+// calculate and return the distance between two points
+float calcDistance(int x1, int y1, int x2, int y2){
+    return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+}
+
+//  print the result
+void printDistance(int x1, int y1, int x2, int y2, float d){
+    cout<<"The distance of points ("<<x1<<" , "<<y1<<") and ("<<x2<<" , "<<y2<<") is "<<d<<endl;
+}
