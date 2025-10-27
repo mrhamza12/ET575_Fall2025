@@ -1,4 +1,5 @@
 /*
+Hamza Imran
 Homework 5 - Functions
 Program 1: Wind Chill Calculation
 Program 2: Descending Order Entries
