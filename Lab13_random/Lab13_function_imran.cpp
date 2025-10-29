@@ -30,19 +30,22 @@ int random_neg10_5(){
     return -10 + rand()%16;
 }
 
-// EXERCISE
-// Function that generates a random number between 1 to 6
+//Exercise
+// function that generates a random number between 1 and 6
 int random_1_6(){
-
-
+    return 1 + rand() % 6;
 }
 
-// function to compare if two numbers are 1s
-bool compare_once(int r1, int r2){
-
+// funtion to compare if two number are 1s
+bool compare_ones(int r1, int r2){
+    return (r1 == 1 && r2 == 1);
 }
 
 // function to prompt result
 void printresult(bool result){
-
+    if(result){
+        cout<<"congrats! You got a snake eyes"<<endl;
+    }else{
+        cout<<"Better luck next time"<<endl;
+    }
 }

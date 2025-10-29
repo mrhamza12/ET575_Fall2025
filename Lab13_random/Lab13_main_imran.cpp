@@ -27,15 +27,16 @@ int main(){
     cout<<"\n ----- Example 4:  Random number between -10 to 5 ----- "<<endl;
     cout<<"Number between -10 to 5: \t" <<random_neg10_5<<endl;
 
-    cout<<"\n ----- EXERCISE -----"<<endl;
-    int run1 = random_1_6();
+   cout<<"\n ---- EXERCISE----"<<endl;
+    int run1 = random_1_6(); // call function to generate a number between 1 and 6
     int run2 = random_1_6();
-
+    cout<<"Run1 = "<<run1<<"\t Run2 = "<<run2<<endl;
+   
     // call funtion to check for snake_eyes
-    bool result = compare_once(run1, run2);
-
+    bool result = compare_ones(run1, run2);
+   
     // call function to print result
-    printresult(result);
+    printresult(compare_ones(run1, run2));  
 
     return 0;
 }
