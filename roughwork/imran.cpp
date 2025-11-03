@@ -1,44 +1,35 @@
-#include<iostream>
-#include "imran.h"
+#include <iostream>
+#include <cmath>
 using namespace std;
-int main(){
-/* // for loop
-    for(int i = 0; i <= 40; i++)
-{
-    cout<<i<<endl;
-}
-    // while loop
-   int i =4;
-   while(i <=40){
-    cout<<i<<endl;
-    i++;
-   }
-    
-   // Infinite while loop
-return NewFunction();
-}
-int NewFunction()
-{
-    int i = 1;
-    while (true)
-    {
-        cout << i << endl;
-        i++;
-    }
-        // do while loop
-       int i = 1;
-       do{
-        cout<<i<<endl;
-        i++;
-       }while(i <=40);
-       */
-      // do while loop with false statment
-      int i = 1;
-       do{
-        cout<<i<<endl;
-        i++;
-       }while(false);
 
+const double PI = 3.1416;
 
+int number;
+cout<<" Enter a number between 1 and 100: "<<endl;
+cin>>number;
+while(number < 1 || number > 1000) {
+    cout<<" Input invalid: Please enter another number: "<<endl;
+    cin>>number;
+}
+return number;
+
+double volumehemisphere(int r){
+    double volume = (2.0/3.0) * PI * pow(r, 3);
+    return volume;
+}
+
+void promptresult(){
+    int radius = number();
+    double volume = volumehemisphere(radius);
+    cout<<" The volume of hemisphere with radius "<<radius<<" is " <<volume<<endl;
+}
+int main() {
+    promptresult();
     return 0;
 }
+
+
+
+
+
+
