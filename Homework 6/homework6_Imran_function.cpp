@@ -30,7 +30,6 @@ void print_result(int side1, int side2, double hypotenuse) {
 
 // Main
 int main() {
-    srand(time(0));
     int side1 = rand_side();
     int side2 = rand_side();
     double hypotenuse = hyp(side1, side2);
