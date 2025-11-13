@@ -55,25 +55,7 @@ int main() {
     // Question 3: Print letter 'r' using nested for loops
     cout << "--- Question 3 ---" << endl;
     
-    for (int row = 1; row <= dimension; row++) {
-        for (int col = 1; col <= dimension; col++) {
-            // Conditions to form the letter 'r'
-            if (col == 1) {  // Vertical stem
-                cout << "# ";
-            } else if (row == 1 && col <= dimension/2 + 1) {  // Top horizontal
-                cout << "# ";
-            } else if (row == dimension/2 + 1 && col <= dimension/2 + 1) {  // Middle horizontal
-                cout << "# ";
-            } else if (col == dimension/2 + 1 && row <= dimension/2 + 1) {  // Right vertical
-                cout << "# ";
-            } else if (row > dimension/2 + 1 && col == row) {  // Diagonal part
-                cout << "# ";
-            } else {
-                cout << "  ";
-            }
-        }
-        cout << endl;
-    }
+    2
     
     return 0;
 }
