@@ -39,7 +39,6 @@ float temp() {
 
 // Function to calculate wind chill index
 float windspeed(int windSpeed, float temperature) {
-    // Wind chill formula: 13.12 + 0.6215*t - 11.37*v^0.16 + 0.3965*t*v^0.16
     double windChill = 13.12 + 0.6215 * temperature - 11.37 * pow(windSpeed, 0.16) 
                       + 0.3965 * temperature * pow(windSpeed, 0.16);
     return windChill;
