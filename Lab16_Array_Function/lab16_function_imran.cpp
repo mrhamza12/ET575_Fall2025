@@ -70,5 +70,23 @@ void printresult(int resultsearch, int target){
 }
 //Exercise
 // function that return the sum of all ecen numberas in an array
+int sumEvenNumbers(const int arr[], int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0) {  // Check if number is even
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
 
-// function that return the cout all negative numbers in an array
+// function that return the count of all negative numbers in an array
+int countNegativeNumbers(const int arr[], int size) {
+    int count = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] < 0) {  // Check if number is negative
+            count++;
+        }
+    }
+    return count;
+}

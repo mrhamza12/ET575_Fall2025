@@ -35,5 +35,16 @@ int main(){
    // initalize varables and array
    int arr_number[] = {6, -10, 9, 12, -3, -8, 5, 7, 4, 4, 0};
 
+   const int exerciseSize = sizeof(arr_number) / sizeof(arr_number[0]);
+   cout << "Test Array: ";
+   printarray(exerciseSize, arr_number);
+
+   // Test the exercise functions
+   int evenSum = sumEvenNumbers(arr_number, exerciseSize);
+   int negativeCount = countNegativeNumbers(arr_number, exerciseSize);
+
+   cout << "Sum of all even numbers: " << evenSum << endl;
+   cout << "Count of all negative numbers: " << negativeCount << endl;
+
     return 0;
 }
