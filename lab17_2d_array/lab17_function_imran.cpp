@@ -72,3 +72,36 @@ int total_odd(int arr[][3], int rowsize, int colsize){
     }
     return counter_odd;
 }
+
+// Function to populate the 2D array with random numbers between 0-100
+void populate(int arr[][4], int rowsize, int colsize) {
+    for(int row = 0; row < rowsize; row++) {
+        for(int col = 0; col < colsize; col++) {
+            arr[row][col] = rand() % 101; // Random number between 0-100
+        }
+    }
+}
+
+// Function to calculate the average of all numbers in the 2D array
+double average(int arr[][4], int rowsize, int colsize) {
+    int sum = 0;
+    int totalElements = rowsize * colsize;
+    
+    for(int row = 0; row < rowsize; row++) {
+        for(int col = 0; col < colsize; col++) {
+            sum += arr[row][col];
+        }
+    }
+    
+    return static_cast<double>(sum) / totalElements;
+}
+
+// Function to print the 2D array
+void print_homework_array(int arr[][4], int rowsize, int colsize) {
+    for(int row = 0; row < rowsize; row++) {
+        for(int col = 0; col < colsize; col++) {
+            cout << arr[row][col] << "\t";
+        }
+        cout << endl;
+    }
+}

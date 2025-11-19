@@ -41,5 +41,33 @@ int main(){
     int c = total_odd(arr_num, 2, 3);
     cout<<"Total odd numbers = "<<c<<endl;
 
-    return 0;
+      cout << "\n\n----- HOMEWORK  -----\n" << endl;
+    
+    char choice;
+    
+    do {
+        // Create a 2D array with 3 rows and 4 columns
+        int homework_array[3][4];
+        
+        // Populate the array with random numbers
+        populate(homework_array, 3, 4);
+        
+        // Display the array
+        cout << "Generated 2D array:" << endl;
+        print_homework_array(homework_array, 3, 4);
+        
+        // Calculate and display the average
+        double avg = average(homework_array, 3, 4);
+        cout << "Average of all numbers: " << avg << endl;
+        
+        // Ask user if they want another run
+        cout << "\nDo you want another run? (y/n): ";
+        cin >> choice;
+        cout << endl;
+        
+    } while (choice == 'y' || choice == 'Y');
+    
+    cout << "Program ended!" << endl;
+
+       return 0;
 }
