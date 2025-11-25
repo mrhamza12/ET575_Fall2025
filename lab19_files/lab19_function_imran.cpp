@@ -84,4 +84,33 @@ void appendfile(string filename){
     fout.close();
 }
 
+// exercise a: function to create a file named 'data_user.txt'
+void createDataFile(){
+    fout.open("data_user.txt");
+    fout<<"This is my output file - Hamza Imran.\n";
+    fout.close();
+}
+
+// exercise b: function to append a new message to the file
+void appendMessage(string message){
+    fout.open("data_user.txt", ios::app);
+    fout<<message<<endl;
+    fout.close();
+}
+
+// exercise c: function to read a file
+void readDataFile(string filename){
+    fin.open(filename);
+    string line;
+    int linecounter = 1;
+    while(getline(fin,line)){
+        cout<<"Line "<<linecounter<<": "<<line<<endl;
+        linecounter++;
+    }
+    fin.close();
+}
+
+
+
+
 

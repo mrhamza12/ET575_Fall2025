@@ -22,5 +22,15 @@ int main(){
 
     cout<<"\n--- Example 5: append data into a file ---"<<endl;
     appendfile("samplefile.txt");
+
+    cout<<"\n--- Exercise ---"<<endl;
+    createDataFile();
+    appendMessage("First appended message.");
+    appendMessage("Second appended message.");
+    readDataFile("data_user.txt");
+
+                      
+
+
     return 0;
 }
