@@ -24,10 +24,7 @@ void collectnumber(int arr[], int &count){
     }while(number != 0 && count < 5);
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> b079e89e69ba53ceb172639a0cb9b0c7d6325d6d
 double Averagenumber(const int arr[], int count){
     int sum = 0;
 
