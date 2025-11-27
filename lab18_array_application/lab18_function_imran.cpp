@@ -7,7 +7,7 @@ Lab 18: Array Application
 #include <iostream>
 using namespace std;
 
-// -------------------- collectnumber --------------------
+
 void collectnumber(int arr[], int &count){
     int number;
     count = 0;
@@ -24,7 +24,7 @@ void collectnumber(int arr[], int &count){
     }while(number != 0 && count < 5);
 }
 
-// -------------------- Averagenumber --------------------
+
 double Averagenumber(const int arr[], int count){
     int sum = 0;
 
@@ -35,7 +35,7 @@ double Averagenumber(const int arr[], int count){
     return static_cast<double>(sum) / count;
 }
 
-// -------------------- Closestmean --------------------
+
 int Closestmean(const int arr[], int count, double avg){
     int closest = arr[0];
     double minDiff = abs(arr[0] - avg);
@@ -51,7 +51,7 @@ int Closestmean(const int arr[], int count, double avg){
     return closest;
 }
 
-// -------------------- Printresult --------------------
+
 void Printresult(double avg, int closest){
     cout << "The closest number to average " 
          << avg 
